@@ -112,3 +112,59 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+/* nav logo */
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+}
+/* nav-menu */
+nav .nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* nav-menu li */
+nav .nav-menu li {
+  margin: 0 15px;
+  font-size: 18px;
+  color: #343a40;
+  cursor: pointer;
+  transition: color 0.3s;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 15px;
+}
+/* nav .nav-menu li a */
+nav .nav-menu li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+/* nav .nav-menu li:hover */
+nav .nav-menu li:hover {
+  color: #007bff;
+}
+/* nav login button*/
+nav .login button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+/* nav .login-button:hover */
+nav .login-button:hover {
+  background-color: #0056b3;
+}
