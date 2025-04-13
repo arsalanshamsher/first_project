@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
+
+:root {
   --red: #d01c28;
   --blue: #007bff;
   --light-blue: #00BFFF;
@@ -26,6 +27,7 @@
   --black: #000000;
   --white: #FFFFFF;
 }
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -133,25 +135,24 @@
   font-weight: 900;
   font-style: italic;
 }
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 12px 50px;
   background-color: #f8f9fa;
 }
-/* nav logo */
-nav .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #343a40;
-}
+
+
+
 /* nav-menu */
 nav .nav-menu {
   display: flex;
@@ -159,39 +160,118 @@ nav .nav-menu {
   padding: 0;
   margin: 0;
 }
+
 /* nav-menu li */
 nav .nav-menu li {
-  margin: 0 15px;
-  font-size: 18px;
+  margin: 0 10px;
   color: #343a40;
   cursor: pointer;
   transition: color 0.3s;
   list-style: none;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 12px;
 }
+
 /* nav .nav-menu li a */
 nav .nav-menu li a {
   text-decoration: none;
   color: inherit;
-  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
+
 /* nav .nav-menu li:hover */
 nav .nav-menu li:hover {
-  color: #007bff;
+  color: var(--red);
 }
+
 /* nav login button*/
 nav .login button {
   background-color: var(--red);
   color: white;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   transition: background-color 0.3s;
 }
-/* nav .login-button:hover */
-nav .login-button:hover {
-  background-color: #0056b3;
+
+/* nav .login:hover */
+nav .login button:hover {
+  background-color: #ff5733;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero .hero-content {
+  padding: 10px 50px;
+}
+
+.hero .hero-content h1 {
+  font-size: 108px;
+  color: #343a40;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.hero .hero-content p {
+  font-size: 20px;
+  color: #6c757d;
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hero .hero-content .hero-btn .shop-now-btn {
+  background-color: var(--red);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.hero .hero-content .hero-btn .category-btn {
+  background-color: white;
+  color: gray;
+  padding: 12px 30px;
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+/* hero .hero-btn .shop-now-btn:hover */
+.hero .hero-btn .shop-now-btn:hover {
+  background-color: #ff5733;
+}
+
+/* hero .hero-btn .category-btn:hover */
+.hero .hero-btn .category-btn:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s;
+  color: #343a40;
+  border: 1px solid #343a40;
+}
+
+.hero .hero-content .shopping p {
+  font-size: 18px;
+  color: #6c757d;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.hero .hero-content .shopping .brand-icon .Amazon{
+  margin-right: 10px;
 }
