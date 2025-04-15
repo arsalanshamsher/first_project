@@ -183,7 +183,7 @@ nav .nav-menu li a {
 
 /* nav .nav-menu li:hover */
 nav .nav-menu li:hover {
-  color: var(--blue);
+  color: var(--red);
 }
 
 /* nav login button*/
